@@ -25,8 +25,6 @@ public class Main {
                     scanner.nextLine();
                 }
             }
-           // int choice = scanner.nextInt();
-            //scanner.nextLine();
 
             switch (choice) {
                 case 1:
