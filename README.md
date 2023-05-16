@@ -14,6 +14,3 @@ General tips for the task:
 2. Next, create a Record class with an attribute to store the list of students and methods to work with the list.
 3. In the main method, use Scanner to enter student data and work with the Records class. 4. Don't forget about while, for and switch!
 5. Test the application with different scenarios to make sure everything works as it should.
-6. BONUS: add Professor class, think about how they could refactor the task to include OOP concepts.
-inheritance??)
-Eg: do students and professors share any attributes/methods? (interface or abstract or Can I assign a professor to a student?
