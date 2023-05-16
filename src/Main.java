@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -15,8 +13,20 @@ public class Main {
             System.out.println("4. Exit");
             System.out.println("Choose an option");
 
-            int choice = scanner.nextInt();
-            scanner.nextLine();
+            boolean option = true;
+            int choice = 0;
+            while(option) {
+                try {
+                    choice = scanner.nextInt();
+                    option = false;
+                    scanner.nextLine();
+                } catch (InputMismatchException e) {
+                    System.out.println("Enter number");
+                    scanner.nextLine();
+                }
+            }
+           // int choice = scanner.nextInt();
+            //scanner.nextLine();
 
             switch (choice) {
                 case 1:
@@ -38,10 +48,6 @@ public class Main {
                         }
                     }
 
-                  //  System.out.println("Year of study: ");
-                    //int yearOfStudy = scanner.nextInt();
-                 //   scanner.nextLine();
-
                     System.out.println("Index Number: ");
                     String indexNumber = scanner.nextLine();
                     Student student = new Student(name, lastName, yearOfStudy, indexNumber);
@@ -59,6 +65,7 @@ public class Main {
                     break;
                 case 3:
                     evidencija.allStudents();
+                    break;
                 case 4:
                     System.out.println("Exit from program");
                     return;
